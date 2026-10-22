@@ -1,0 +1,18 @@
+.job-card { display: grid; gap: 12px; padding: 18px; border: 1px solid var(--color-border); border-radius: 14px; background: var(--color-surface); box-shadow: var(--shadow-sm); transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.job-card:hover { transform: translateY(-2px); border-color: var(--color-primary-border); box-shadow: var(--shadow-md); }
+.job-card__top, .job-card__bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.job-card__company-logo { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--color-surface-muted); color: var(--color-primary); font-size: .78rem; font-weight: 900; }
+.job-card__match { padding: 5px 8px; border-radius: 999px; background: var(--color-success-soft); color: var(--color-success); font-size: .72rem; font-weight: 800; }
+.job-card__match span { font-weight: 950; }
+.job-card__content h3 { margin: 0; color: var(--color-text); font-size: 1rem; letter-spacing: -.015em; }
+.job-card__company { margin: 5px 0 10px; color: var(--color-text-secondary); font-size: .8rem; font-weight: 700; }
+.job-card__meta { display: flex; flex-wrap: wrap; gap: 7px; }
+.job-card__meta span { display: inline-flex; align-items: center; gap: 5px; color: var(--color-text-secondary); font-size: .72rem; }
+.job-card__salary { margin: 13px 0 0; color: var(--color-text); font-size: .83rem; font-weight: 800; }
+.job-card__salary--muted { color: var(--color-text-tertiary); }
+.job-card__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
+.job-card__tags span { padding: 5px 7px; border-radius: 6px; background: var(--color-surface-muted); color: var(--color-text-secondary); font-size: .66rem; font-weight: 800; }
+.job-card__bottom { padding-top: 10px; border-top: 1px solid var(--color-border); }
+.job-card__date { color: var(--color-text-tertiary); font-size: .68rem; }
+.job-card__link { display: inline-flex; align-items: center; gap: 4px; color: var(--color-primary); font-size: .75rem; font-weight: 850; }
+.job-card__link:hover { text-decoration: underline; }

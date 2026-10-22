@@ -1,0 +1,8 @@
+.modal-backdrop { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 18px; background: rgba(15, 23, 42, .52); backdrop-filter: blur(5px); }
+.modal { width: min(100%, 620px); max-height: min(700px, calc(100vh - 36px)); overflow: auto; border: 1px solid var(--color-border); border-radius: 16px; background: var(--color-surface); box-shadow: 0 24px 70px rgba(15, 23, 42, .22); }
+.modal--sm { width: min(100%, 440px); }
+.modal__head { display: flex; justify-content: space-between; gap: 18px; padding: 18px 20px; border-bottom: 1px solid var(--color-border); }
+.modal__head h2 { margin: 0; font-size: 1rem; letter-spacing: -.015em; }
+.modal__head p { margin: 5px 0 0; color: var(--color-text-secondary); font-size: .75rem; line-height: 1.5; }
+.modal__close { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; border: 0; border-radius: 9px; background: var(--color-surface-muted); color: var(--color-text-secondary); cursor: pointer; }
+.modal__body { padding: 20px; }

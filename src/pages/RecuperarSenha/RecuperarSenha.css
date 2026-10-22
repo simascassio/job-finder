@@ -1,0 +1,8 @@
+.recovery-shell { min-height: calc(100vh - 84px); display: grid; place-items: center; padding-block: 35px 65px; }
+.recovery-card { width: min(100%, 500px); text-align: center; }
+.recovery-icon { display: grid; place-items: center; width: 44px; height: 44px; margin: 0 auto 17px; border-radius: 12px; background: var(--color-primary-soft); color: var(--color-primary); }
+.recovery-card h1 { margin: 8px 0 10px; color: var(--color-text); font-size: 1.65rem; letter-spacing: -.04em; }
+.recovery-card > p:not(.eyebrow) { max-width: 390px; margin: 0 auto; color: var(--color-text-secondary); font-size: .82rem; line-height: 1.6; }
+.recovery-form { display: grid; gap: 14px; margin-top: 25px; text-align: left; }
+.recovery-success { display: flex; gap: 8px; align-items: flex-start; padding: 11px 12px; border: 1px solid var(--color-success-border); border-radius: 9px; background: var(--color-success-soft); color: var(--color-success); font-size: .75rem; line-height: 1.45; }
+.recovery-back { display: inline-flex; align-items: center; gap: 5px; margin-top: 20px; color: var(--color-primary); font-size: .77rem; font-weight: 850; }

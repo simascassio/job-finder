@@ -1,0 +1,44 @@
+.dashboard-hero { border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 78% 20%, var(--color-primary-soft), transparent 28%), var(--color-background); }
+.dashboard-hero__inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding: 55px 0 48px; }
+.hero-chip { display: inline-flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px solid var(--color-primary-border); border-radius: 999px; background: var(--color-primary-soft); color: var(--color-primary); font-size: .69rem; font-weight: 900; }
+.dashboard-hero h1 { max-width: 760px; margin: 16px 0 10px; color: var(--color-text); font-size: clamp(2.2rem, 5vw, 4.2rem); line-height: .98; letter-spacing: -.055em; }
+.dashboard-hero p { max-width: 700px; margin: 0; color: var(--color-text-secondary); font-size: .95rem; line-height: 1.6; }
+.hero-highlight { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; padding: 12px 14px; border: 1px solid var(--color-border); border-radius: 13px; background: var(--color-surface); box-shadow: var(--shadow-sm); }
+.hero-highlight__icon { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 9px; background: var(--color-primary-soft); color: var(--color-primary); }
+.hero-highlight div { display: grid; gap: 1px; }
+.hero-highlight strong { color: var(--color-text); font-size: 1rem; }
+.hero-highlight span { color: var(--color-text-tertiary); font-size: .68rem; }
+.dashboard-content { padding: 34px 0 70px; }
+.surface-panel { border: 1px solid var(--color-border); border-radius: 18px; background: var(--color-surface); box-shadow: var(--shadow-md); }
+.search-panel { padding: clamp(18px, 3vw, 30px); }
+.results-section, .saved-section { padding-top: 54px; scroll-margin-top: 90px; }
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.section-head h2 { margin: 0; color: var(--color-text); font-size: 1.35rem; letter-spacing: -.03em; }
+.section-head > div > p:last-child { margin: 6px 0 0; color: var(--color-text-secondary); font-size: .79rem; line-height: 1.55; }
+.result-summary { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface); color: var(--color-text-tertiary); font-size: .68rem; font-weight: 800; white-space: nowrap; }
+.jobs-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+.saved-list { display: grid; gap: 10px; }
+.empty-state { display: grid; justify-items: center; padding: 42px 20px; border: 1px dashed var(--color-border-strong); border-radius: 14px; background: var(--color-surface-muted); text-align: center; }
+.empty-state--compact { padding-block: 34px; }
+.empty-state__icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 11px; border-radius: 12px; background: var(--color-surface); color: var(--color-primary); }
+.empty-state h3 { margin: 0; color: var(--color-text); font-size: .95rem; }
+.empty-state p { max-width: 480px; margin: 7px 0 16px; color: var(--color-text-secondary); font-size: .77rem; line-height: 1.55; }
+.save-modal-form { display: grid; gap: 17px; }
+.frequency-fieldset { border: 0; margin: 0; padding: 0; }
+.frequency-fieldset legend { margin-bottom: 9px; color: var(--color-text); font-size: .82rem; font-weight: 800; }
+.frequency-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+.frequency-option { display: flex; align-items: center; gap: 8px; padding: 10px; border: 1px solid var(--color-border); border-radius: 9px; background: var(--color-surface); color: var(--color-text-secondary); font-size: .74rem; font-weight: 700; cursor: pointer; }
+.frequency-option--selected { border-color: var(--color-primary); background: var(--color-primary-soft); color: var(--color-primary); }
+.frequency-option input { margin: 0; accent-color: var(--color-primary); }
+.save-modal-note { display: flex; align-items: flex-start; gap: 7px; padding: 10px 11px; border-radius: 9px; background: var(--color-surface-muted); color: var(--color-text-tertiary); font-size: .69rem; line-height: 1.45; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 7px; padding-top: 4px; }
+@media (max-width: 980px) { .jobs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .dashboard-hero__inner { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 620px) {
+  .dashboard-hero__inner, .dashboard-content { padding-inline: 14px; }
+  .dashboard-hero__inner { padding-top: 38px; padding-bottom: 34px; }
+  .section-head { align-items: flex-start; flex-direction: column; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .frequency-options { grid-template-columns: 1fr; }
+  .modal-actions { flex-direction: column-reverse; }
+  .modal-actions .button { width: 100%; }
+}
